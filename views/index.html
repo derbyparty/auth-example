@@ -14,7 +14,7 @@
           <h4>Logged in with:</h4>
           {{if _session.user.email}}
             <p>Local Strategy ({{_session.user.email}})</p>
-            <view name="auth:changePassword"/>
+            <view name="auth:changepassword"/>
           {{/if}}
           {{if _session.user.facebook}}
             <p><a href="{{_session.user.facebook.profileUrl}}" target="_blank">Facebook Profile ({{_session.user.facebook.displayName}})</a></p>
