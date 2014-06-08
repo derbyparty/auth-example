@@ -2,6 +2,7 @@ var derby = require('derby'),
     path = require('path');
 
 var app = module.exports = derby.createApp('auth', __filename);
+app.serverUse(module, 'derby-stylus');
 
 if (!derby.util.isProduction) {
   global.app = app;

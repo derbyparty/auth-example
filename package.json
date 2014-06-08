@@ -9,10 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "derby": "~0.6.0-alpha8",
+    "derby": "~0.6.0-alpha13",
     "derby-starter": "git://github.com/vmakhaev/derby-starter.git#auth",
     "passport-facebook": "~1.0.3",
     "passport-github": "~0.1.5",
-    "passport-vkontakte": "~0.2.1"
+    "passport-vkontakte": "~0.2.1",
+    "derby-stylus": "~0.1.0"
   }
 }
