@@ -14,6 +14,8 @@
     "passport-facebook": "~1.0.3",
     "passport-github": "~0.1.5",
     "passport-vkontakte": "~0.2.1",
-    "derby-stylus": "~0.1.0"
+    "derby-stylus": "~0.1.0",
+    "passport-google": "~0.3.0",
+    "passport-google-oauth": "~0.1.5"
   }
 }

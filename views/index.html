@@ -4,6 +4,7 @@
       <div class="col-md-6">
         <p><a href="/auth/facebook">Login with Facebook</a></p>
         <p><a href="/auth/github">Login with Github</a></p>
+        <p><a href="/auth/google">Login with Google</a></p>
         <p><a href="/auth/vkontakte">Login with Vkontakte</a></p>
 
         <view name="auth:login"/>
@@ -21,6 +22,9 @@
           {{/if}}
           {{if _session.user.github}}
             <p><a href="{{_session.user.github.profileUrl}}" target="_blank">Github Profile ({{_session.user.github.username}})</a></p>
+          {{/if}}
+          {{if _session.user.google}}
+            <p><a href="{{_session.user.google.profileUrl}}" target="_blank">Google Profile ({{_session.user.google.displayName}})</a></p>
           {{/if}}
           {{if _session.user.vkontakte}}
             <p><a href="{{_session.user.vkontakte.profileUrl}}" target="_blank">Vkontakte Profile ({{_session.user.vkontakte.displayName}})</a></p>

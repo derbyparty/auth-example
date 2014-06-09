@@ -27,6 +27,15 @@ var options = {
           clientSecret: '61631bdef37fce808334c83f1336320846647115'
         }
       },
+      google: {
+        strategy: require('passport-google-oauth').OAuth2Strategy,
+        conf: {
+          clientID: '1060568558513-164eli9jaaf8nbjgv4asv3gutn72usl6.apps.googleusercontent.com',
+          clientSecret: 'lqYJ1NF1AEeAA07MUGrIynXD',
+          callbackURL: 'http://localhost:3000/auth/google/callback',
+          scope: 'https://www.googleapis.com/auth/plus.login'
+        }
+      },
       vkontakte: {
         strategy: require('passport-vkontakte').Strategy,
         conf: {
@@ -41,6 +50,7 @@ var options = {
       email: true,
       facebook: true,
       github: true,
+      google: true,
       vkontakte: true
     }
   }
