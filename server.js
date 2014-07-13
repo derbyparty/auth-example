@@ -3,6 +3,7 @@ var derbyStarter = require('derby-starter');
 var options = {
   auth: {
     passport: {
+      failureRedirect: '/',
       registerCallback: function(req, res, user, done) {
         var model = req.getModel();
         var $user = model.at('auths.' + user.id);
